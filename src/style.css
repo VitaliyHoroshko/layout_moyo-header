@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
+body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -19,6 +15,13 @@ html {
   align-items: center;
   padding: 0 50px;
   background-color: #fff;
+  height: 60px;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
 .logo {
@@ -29,6 +32,8 @@ html {
 .nav_list {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_item:not(:first-child) {
@@ -36,11 +41,12 @@ html {
 }
 
 .nav_link {
-  display: block;
+  display: flex;
+  align-items: center;
+  height: 60px;
   text-transform: uppercase;
   font-size: 12px;
   color: #000;
-  line-height: 60px;
   text-decoration: none;
   transition: 0.3s;
   text-align: center;
@@ -49,7 +55,6 @@ html {
 
 .is-active {
   color: var(--blue);
-  position: relative;
 }
 
 .is-active::after {
